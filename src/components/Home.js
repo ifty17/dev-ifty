@@ -25,12 +25,17 @@ const Home = () => {
                 <MdOutlineKeyboardArrowRight className="ml-1"></MdOutlineKeyboardArrowRight>
               </span>
             </button>
-            <button className="group cursor-pointer text-white w-fit  px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500">
-              Download Resume
+            <a
+              type="button"
+              target="_blank"
+              href="https://drive.google.com/file/d/1vSy6AqrhiDFzbMUcXNXYPoGiqbaZjz2o/view?usp=share_link"
+              className=" group cursor-pointer text-white w-fit  px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500"
+            >
+              Resume
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight className="ml-1"></MdOutlineKeyboardArrowRight>
               </span>
-            </button>
+            </a>
           </div>
         </div>
         <div className="md:w-[50%]">
