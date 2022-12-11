@@ -16,12 +16,12 @@ const Home = () => {
     >
       {/* max-w-screen-lg */}
       <div className=" flex flex-col mx-auto items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full md:w-[60%] mx-5 md:mx-20">
+        <div className="flex flex-col justify-center pb-20 md:w-[60%] px-4 md:px-20">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             {/* I'm a Front-End Developer */}
             <Typewriter
               options={{
-                strings: ["Hello! I am Rahat", "I am a Front-end developer"],
+                strings: ["Hello! I am Rahat Kabir Ifty", "I am a Front-end developer"],
                 autoStart: true,
                 loop: true,
               }}

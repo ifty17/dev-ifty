@@ -60,7 +60,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2 hover:scale-105 duration-200 cursor-pointer">
-          Rahat
+          Rahat Kabir
         </h1>
       </div>
 
