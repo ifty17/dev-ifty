@@ -61,7 +61,7 @@ const Portfolio = () => {
             </a>
           </div>
         </div>
-        <div className=" my-auto mx-10 md:w-[600px] md:ml-20">
+        <div className=" my-auto mx-10 md:w-[600px] ">
           <img
             className="hover:scale-105 duration-500 rounded-lg"
             src={pcBuilder}
@@ -72,7 +72,7 @@ const Portfolio = () => {
 
       <div className="hidden md:block">
         <div className="grid grid-cols-1 md:grid-cols-2 py-20 ">
-          <div className=" my-auto mx-10 md:w-[600px] md:ml-20">
+          <div className=" my-auto mx-10 md:w-[600px] ">
             <img
               className="hover:scale-105 duration-500 rounded-lg"
               src={natureTti}
@@ -185,7 +185,7 @@ const Portfolio = () => {
               </a>
             </div>
           </div>
-          <div className=" my-auto mx-10 md:w-[600px] md:ml-20">
+          <div className=" my-auto mx-10 md:w-[600px] ">
             <img
               className="hover:scale-105 duration-500 rounded-lg"
               src={natureTti}
@@ -245,7 +245,7 @@ const Portfolio = () => {
             </a>
           </div>
         </div>
-        <div className=" my-auto mx-10 md:w-[600px] md:ml-20">
+        <div className=" my-auto mx-10 md:w-[600px]">
           <img
             className="hover:scale-105 duration-500 rounded-lg"
             src={proCoder}
