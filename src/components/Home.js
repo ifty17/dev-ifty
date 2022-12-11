@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -19,17 +20,18 @@ const Home = () => {
             porro aut tempora aliquid eum provident.
           </p>
           <div className="flex">
-            <button className="group cursor-pointer mr-6 text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-indigo-600 to-blue-500">
+            <Link to='portfolio' smooth duration='500' className="hover:scale-110 duration-300 group cursor-pointer mr-6 text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-indigo-600 to-blue-500">
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight className="ml-1"></MdOutlineKeyboardArrowRight>
               </span>
-            </button>
+            </Link>
             <a
               type="button"
               target="_blank"
               href="https://drive.google.com/file/d/1vSy6AqrhiDFzbMUcXNXYPoGiqbaZjz2o/view?usp=share_link"
-              className=" group cursor-pointer text-white w-fit  px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500"
+              className="hover:scale-110 duration-300 group cursor-pointer text-white w-fit  px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500"
+              rel="noreferrer"
             >
               Resume
               <span className="group-hover:rotate-90 duration-300">

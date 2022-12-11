@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -57,7 +57,7 @@ const Navbar = () => {
 
   //   );
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white  fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2 hover:scale-105 duration-200 cursor-pointer">
           Rahat
@@ -70,7 +70,9 @@ const Navbar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={700}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -89,7 +91,9 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              {link}
+              <Link onClick={() => setNav(!nav)} to={link} smooth duration={700}>
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

@@ -3,11 +3,11 @@ import React from "react";
 const About = () => {
   return (
     <div name='about' className='w-full h-screen text-white'>
-      <div className="mx-w-screen-lg px-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <div className="mx-w-screen-lg px-4 md:px-20 mx-auto flex flex-col justify-center w-full h-full ">
+        <div className="">
           <p className="text-4xl font-bold inline border-b-4">About</p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aperiam
           autem illo sed laudantium obcaecati earum laborum modi cupiditate!
           Quod suscipit iusto nam impedit fugiat veniam recusandae assumenda,
