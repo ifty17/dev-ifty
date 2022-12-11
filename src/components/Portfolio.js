@@ -5,97 +5,60 @@ import proCoder from "../assets/procoder.png";
 
 const Portfolio = () => {
   return (
-    <div name="portfolio" className="w-full text-white md:h-screen">
-      <div className="max-w-screen-lg px-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-3">
-          <p className="text-4xl font-bold inline border-b-4">Portfolio</p>
-          <p className="pt-3">Check out some of my work here</p>
+    <div name="portfolio" className="w-full text-white py-10 md:mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="mx-10">
+          <h1 className="text-5xl">Pc Builder</h1>
+          <p className="text-2xl pb-5">
+            A Pc components reselling Web Application
+          </p>
+          <h4 className="text-3xl font-bold">Features:</h4>
+          <p>
+            • Users can create two types of accounts: Buyer account & Seller
+            account when they sign in. Also this website has an admin route only
+            for admin.
+          </p>
+          <p>
+            • Sellers can add products and delete products also they can see
+            their products and they can advertise their products.
+          </p>
+          <p>
+            • Admin can see all sellers and all buyers and reported items. Admin
+            can delete a seller or buyer if he wants delete.
+          </p>
+          <div className="flex gap-3 md:gap-8">
+            <a
+              type="button"
+              target="_blank"
+              href="https://drive.google.com/file/d/1vSy6AqrhiDFzbMUcXNXYPoGiqbaZjz2o/view?usp=share_link"
+              className="btn-xs md:btn-md hover:scale-110 duration-300 group cursor-pointer text-white px-3 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500"
+              rel="noreferrer"
+            >
+              Live Site
+            </a>
+            <a
+              type="button"
+              target="_blank"
+              href="https://drive.google.com/file/d/1vSy6AqrhiDFzbMUcXNXYPoGiqbaZjz2o/view?usp=share_link"
+              className="btn-xs md:btn-md hover:scale-110 duration-300 group cursor-pointer text-white px-3 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500"
+              rel="noreferrer"
+            >
+              Client Site
+            </a>
+            <a
+              type="button"
+              target="_blank"
+              href="https://drive.google.com/file/d/1vSy6AqrhiDFzbMUcXNXYPoGiqbaZjz2o/view?usp=share_link"
+              className="btn-xs md:btn-md hover:scale-110 duration-300 group cursor-pointer text-white px-3 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500"
+              rel="noreferrer"
+            >
+              Server Site
+            </a>
+            
+          </div>
         </div>
-
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          <div className="rounded-lg shadow-md h-full">
-            <div>
-              <img
-                className="rounded-md duration-200 hover:scale-105"
-                src={pcBuilder}
-                alt=""
-              />
-            </div>
-            <div className="py-4 px-4">
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Live
-                </button>
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Client
-                </button>
-              </div>
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Server
-                </button>
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Details
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-lg shadow-md h-full">
-            <div>
-              <img
-                className="rounded-md duration-200 hover:scale-105"
-                src={natureTti}
-                alt=""
-              />
-            </div>
-            <div className="py-4 px-4">
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Live
-                </button>
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Client
-                </button>
-              </div>
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Server
-                </button>
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Details
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-lg shadow-md h-full">
-            <div>
-              <img
-                className="rounded-md duration-200 hover:scale-105 w-full"
-                src={proCoder}
-                alt=""
-              />
-            </div>
-            <div className="py-4 px-4">
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Live
-                </button>
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Client
-                </button>
-              </div>
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-2 border mx-2 my-2 duration-200 hover:scale-105">
-                  Server
-                </button>
-                <button className="w-1/2 px-6 py-2 mx-2 my-2 border  duration-200 hover:scale-105">
-                  Details
-                </button>
-              </div>
-            </div>
-          </div>
+        <div className=" my-auto mx-10 md:w-[600px] md:ml-20">
+          <img src={pcBuilder} alt="" />
         </div>
       </div>
     </div>
