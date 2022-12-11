@@ -59,9 +59,14 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  fixed">
       <div>
-        <h1 className="text-5xl font-signature ml-2 hover:scale-105 duration-200 cursor-pointer">
+        <Link
+          to="home"
+          smooth
+          duration={600}
+          className="text-5xl font-signature ml-2 hover:scale-105 duration-200 cursor-pointer"
+        >
           Rahat Kabir
-        </h1>
+        </Link>
       </div>
 
       <ul className="hidden md:flex">
@@ -91,7 +96,12 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              <Link onClick={() => setNav(!nav)} to={link} smooth duration={700}>
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={600}
+              >
                 {link}
               </Link>
             </li>

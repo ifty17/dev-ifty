@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/heroImagecopy.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Typewriter from 'typewriter-effect';
@@ -18,7 +18,6 @@ const Home = () => {
       <div className=" flex flex-col mx-auto items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center pb-20 md:w-[60%] px-4 md:px-20">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            {/* I'm a Front-End Developer */}
             <Typewriter
               options={{
                 strings: ["Hello! I am Rahat Kabir Ifty", "I am a Front-end developer"],
@@ -60,7 +59,7 @@ const Home = () => {
         </div>
         <div className="md:w-[50%]">
           <img
-            className="rounded-full mx-auto w-[60%]  border"
+            className="rounded-full mx-auto w-[60%]  border hover:scale-125 duration-300"
             src={HeroImage}
             alt="my profile"
           />
