@@ -73,7 +73,7 @@ const Portfolio = ({project}) => {
               </Link>
             </div>
           </div>
-          <div className=" my-auto mx-10 md:mt-5 md:ml-20 md:w-[500px] lg:ml-0 xl:mx-10 xl:w-[600px]">
+          <div className=" my-auto mx-10 md:mt-5 md:ml-20 md:w-[500px] lg:ml-0 xl:ml-10 xl:w-[90%]">
             <Swiper
               pagination={{
                 dynamicBullets: true,
