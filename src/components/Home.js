@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+      className="pb-40"
     >
       {/* max-w-screen-lg */}
       <div className=" flex flex-col mx-auto items-center justify-center h-full px-4 md:flex-row">
@@ -62,9 +62,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-[50%] md:mt-28 pb-10 pt-5 md:pt-0  md:pb-0">
+        <div className="md:w-[50%] md:mt-28 pb-10 pt-24 md:pt-0  md:pb-0">
           <img
-            className="rounded-full mx-auto w-[60%] md:w-[80%] lg:w-[70%]  border hover:scale-125 duration-300"
+            className="rounded-full mx-auto w-[80%] md:w-[80%] lg:w-[60%]  border hover:scale-125 duration-300"
             src={HeroImage}
             alt="my profile"
           />
