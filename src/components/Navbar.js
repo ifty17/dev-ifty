@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import {Link} from 'react-scroll'
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -30,14 +31,14 @@ const Navbar = () => {
   return (
     <div className="z-[999] flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600  fixed">
       <div>
-        <Link
+        <ScrollLink
           to="home"
           smooth
           duration={600}
           className="text-5xl font-signature ml-2 hover:scale-105 duration-200 cursor-pointer"
         >
-          Rahat Kabir
-        </Link>
+          <RouterLink to='/'>Rahat Kabir</RouterLink>
+        </ScrollLink>
       </div>
 
       <ul className="hidden md:flex">
@@ -46,11 +47,17 @@ const Navbar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
           >
-            <Link to={link} smooth duration={700}>
+            <ScrollLink to={link} smooth duration={700}>
               {link}
-            </Link>
+            </ScrollLink>
           </li>
         ))}
+        <RouterLink
+          className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
+          to="/blogs"
+        >
+          Blogs
+        </RouterLink>
       </ul>
 
       <div
@@ -67,16 +74,22 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              <Link
+              <ScrollLink
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth
-                duration={600}
+                duration={700}
               >
                 {link}
-              </Link>
+              </ScrollLink>
             </li>
           ))}
+          <RouterLink
+            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            to="/blogs"
+          >
+            Blogs
+          </RouterLink>
         </ul>
       )}
     </div>

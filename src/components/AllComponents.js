@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './About';
+import Blogs from './Blogs';
 import Contact from './Contact';
 import Experience from './Experience';
 import Footer from './Footer';
