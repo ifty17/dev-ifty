@@ -28,13 +28,13 @@ const Portfolio = ({project}) => {
     
   return (
     <div name="portfolio" className="w-full text-white py-10 ">
-      <div className="pb-10">
+      {/* <div className="pb-10">
         <p className="text-4xl mx-5 md:mx-10 md:ml-28 font-bold inline border-b-4">
           Projects
         </p>
-      </div>
+      </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
-        <div className="mx-5 md:ml-10 xl:mx-10 xl:ml-28">
+        <div className="mx-5 md:ml-20 xl:mx-10 xl:ml-28">
           <h1 className="text-4xl md:text-5xl">{name}</h1>
           <p className="text-2xl pb-5">{title}</p>
           <h4 className=" text-2xl md:text-3xl font-bold">Features:</h4>
@@ -77,7 +77,7 @@ const Portfolio = ({project}) => {
             </Link>
           </div>
         </div>
-        <div className=" my-auto mx-10 md:mr-10 md:w-[450px]  xl:mx-10 xl:w-[600px]">
+        <div className=" my-auto mx-10 md:mt-5 md:ml-20 md:w-[500px] lg:ml-0 xl:mx-10 xl:w-[600px]">
           <Swiper
             pagination={{
               dynamicBullets: true,
