@@ -6,28 +6,6 @@ import { Link as RouterLink } from "react-router-dom";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "portfolio",
-    },
-    {
-      id: 4,
-      link: "experience",
-    },
-    {
-      id: 5,
-      link: "contact",
-    },
-  ];
   return (
     <div className="z-[999] flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600  fixed">
       <div>
@@ -37,21 +15,56 @@ const Navbar = () => {
           duration={600}
           className="text-5xl font-signature ml-2 hover:scale-105 duration-200 cursor-pointer"
         >
-          <RouterLink to='/'>Rahat Kabir</RouterLink>
+          <RouterLink to="/">Rahat Kabir</RouterLink>
         </ScrollLink>
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
-          >
-            <ScrollLink to={link} smooth duration={700}>
-              {link}
-            </ScrollLink>
-          </li>
-        ))}
+        <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
+          <ScrollLink to="home" smooth duration={700}>
+            <RouterLink to="/">
+              <ScrollLink to="home" smooth duration={700}>
+                Home
+              </ScrollLink>
+            </RouterLink>
+          </ScrollLink>
+        </li>
+        <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
+          <ScrollLink to="about" smooth duration={700}>
+            <RouterLink to="/">
+              <ScrollLink to="about" smooth duration={700}>
+                About
+              </ScrollLink>
+            </RouterLink>
+          </ScrollLink>
+        </li>
+        <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
+          <ScrollLink to="portfolio" smooth duration={700}>
+            <RouterLink to="/">
+              <ScrollLink to="portfolio" smooth duration={700}>
+                Portfolio
+              </ScrollLink>
+            </RouterLink>
+          </ScrollLink>
+        </li>
+        <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
+          <ScrollLink to="experience" smooth duration={700}>
+            <RouterLink to="/">
+              <ScrollLink to="experience" smooth duration={700}>
+                Skills
+              </ScrollLink>
+            </RouterLink>
+          </ScrollLink>
+        </li>
+        <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
+          <ScrollLink to="contact" smooth duration={700}>
+            <RouterLink to="/">
+              <ScrollLink to="contact" smooth duration={700}>
+                Contact
+              </ScrollLink>
+            </RouterLink>
+          </ScrollLink>
+        </li>
         <RouterLink
           className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
           to="/blogs"
@@ -69,21 +82,56 @@ const Navbar = () => {
 
       {nav && (
         <ul className=" flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 text-white">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <ScrollLink
+              onClick={() => setNav(false)}
+              to="home"
+              smooth
+              duration={700}
             >
-              <ScrollLink
-                onClick={() => setNav(!nav)}
-                to={link}
-                smooth
-                duration={700}
-              >
-                {link}
-              </ScrollLink>
-            </li>
-          ))}
+              <RouterLink to="/">Home</RouterLink>
+            </ScrollLink>
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <ScrollLink
+              onClick={() => setNav(!nav)}
+              to="about"
+              smooth
+              duration={700}
+            >
+              about
+            </ScrollLink>
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <ScrollLink
+              onClick={() => setNav(!nav)}
+              to="portfolio"
+              smooth
+              duration={700}
+            >
+              portfolio
+            </ScrollLink>
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <ScrollLink
+              onClick={() => setNav(!nav)}
+              to="experience"
+              smooth
+              duration={700}
+            >
+              experience
+            </ScrollLink>
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <ScrollLink
+              onClick={() => setNav(!nav)}
+              to="contact"
+              smooth
+              duration={700}
+            >
+              contact
+            </ScrollLink>
+          </li>
           <RouterLink
             className="px-4 cursor-pointer capitalize py-6 text-4xl"
             to="/blogs"
