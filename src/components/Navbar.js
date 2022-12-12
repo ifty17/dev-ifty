@@ -23,45 +23,38 @@ const Navbar = () => {
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="home" smooth duration={700}>
             <RouterLink to="/">
-              <ScrollLink to="home" smooth duration={700}>
                 Home
-              </ScrollLink>
+              
             </RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="about" smooth duration={700}>
             <RouterLink to="/">
-              <ScrollLink to="about" smooth duration={700}>
                 About
-              </ScrollLink>
             </RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="portfolio" smooth duration={700}>
             <RouterLink to="/">
-              <ScrollLink to="portfolio" smooth duration={700}>
                 Portfolio
-              </ScrollLink>
+              
             </RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="experience" smooth duration={700}>
             <RouterLink to="/">
-              <ScrollLink to="experience" smooth duration={700}>
                 Skills
-              </ScrollLink>
             </RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="contact" smooth duration={700}>
             <RouterLink to="/">
-              <ScrollLink to="contact" smooth duration={700}>
                 Contact
-              </ScrollLink>
+              
             </RouterLink>
           </ScrollLink>
         </li>
