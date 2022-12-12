@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import pcBuilder from "../assets/pcbuilder.png";
-import pcBuilder2 from '../assets/pcbuilder2.png';
-import pcBuilder3 from '../assets/pcbuilder3.png';
-import nature from "../assets/nature.png";
-import nature2 from '../assets/nature2.png';
-import nature3 from '../assets/nature3.png';
-import proCoder from "../assets/procoder.png";
-import proCoder2 from '../assets/procoder2.png';
-import proCoder3 from '../assets/procoder3.png';
 // import { Link } from "react-scroll";
-import { Link, RouterProvider } from "react-router-dom";
-import router from "../routes/routes";
+import { Link} from "react-router-dom";
 
 const Portfolio = ({project}) => {
     console.log(project);
@@ -30,7 +20,7 @@ const Portfolio = ({project}) => {
      details1,
      details2,
      details3,
-     packages,
+     title,
      id
    } = project;
 
@@ -43,22 +33,14 @@ const Portfolio = ({project}) => {
           Projects
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="mx-5 md:mx-10 md:ml-28">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
+        <div className="mx-5 md:ml-10 xl:mx-10 xl:ml-28">
           <h1 className="text-4xl md:text-5xl">{name}</h1>
-          <p className="text-2xl pb-5">
-            A Pc components reselling Web Application
-          </p>
+          <p className="text-2xl pb-5">{title}</p>
           <h4 className=" text-2xl md:text-3xl font-bold">Features:</h4>
-          <p>
-            • {details1}
-          </p>
-          <p>
-            • {details2}
-          </p>
-          <p>
-            • {details3}
-          </p>
+          <p>• {details1}</p>
+          <p>• {details2}</p>
+          <p>• {details3}</p>
           <div className="flex gap-3 md:gap-8">
             <a
               type="button"
@@ -87,12 +69,15 @@ const Portfolio = ({project}) => {
             >
               Server Site
             </a>
-            <Link to={`/details/${id}`} className="btn-xs md:btn-md hover:scale-110 duration-300 group cursor-pointer text-white px-3 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500">
+            <Link
+              to={`/details/${id}`}
+              className="btn-xs md:btn-md hover:scale-110 duration-300 group cursor-pointer text-white px-3 py-3 my-2 flex items-center rounded-md bg-gradient-to-r  from-indigo-600 to-blue-500"
+            >
               Details
             </Link>
           </div>
         </div>
-        <div className=" my-auto mx-10 md:w-[600px] ">
+        <div className=" my-auto mx-10 md:mr-10 md:w-[450px]  xl:mx-10 xl:w-[600px]">
           <Swiper
             pagination={{
               dynamicBullets: true,

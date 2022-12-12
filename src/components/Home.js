@@ -21,16 +21,20 @@ const Home = () => {
             Hi! I am Rahat Kabir Ifty
             <Typewriter
               options={{
-                strings: ["Front-end Developer", "Web Developer", "React JS Developer"],
+                strings: [
+                  "Front-end Developer",
+                  "Web Developer",
+                  "React JS Developer",
+                ],
                 autoStart: true,
                 loop: true,
               }}
             />
           </h2>
           <p className="text-gray-200 py-4 max-w-md">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptatibus ipsa itaque iusto ad dolor omnis, soluta quos, eligendi
-            porro aut tempora aliquid eum provident.
+            Creative Web Developer with the ability to take any programming
+            related challenges by handling difficult and hard situations at any
+            time.
           </p>
           <div className="flex">
             <Link

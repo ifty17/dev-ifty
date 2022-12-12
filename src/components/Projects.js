@@ -7,7 +7,7 @@ const Projects = () => {
     console.log(projects);
 
     useEffect(() => {
-      fetch("http://localhost:5000/projects")
+      fetch("https://dev-ifty-server-ifty17.vercel.app/projects")
         .then((res) => res.json())
         .then((data) => setProjects(data));
     }, []);

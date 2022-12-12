@@ -15,7 +15,7 @@ const router = createBrowserRouter([
       {
         path: "/details/:id",
         element: <DetailsPCB></DetailsPCB>,
-        loader: ({ params }) => fetch(`http://localhost:5000/details/${params.id}`)
+        loader: ({ params }) => fetch(`https://dev-ifty-server-ifty17.vercel.app/details/${params.id}`)
       },
     ],
   },
