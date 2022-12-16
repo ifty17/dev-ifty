@@ -22,8 +22,8 @@ const Home = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Front-end Developer",
                   "Web Developer",
+                  "MERN stack Developer",
                   "React JS Developer",
                 ],
                 autoStart: true,
