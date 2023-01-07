@@ -7,7 +7,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="z-[999] flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600  fixed">
+    <div className="z-[999] flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-indigo-700 via-purple-800 to-pink-700  fixed">
       <div>
         <ScrollLink
           to="home"
@@ -22,40 +22,27 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="home" smooth duration={700}>
-            <RouterLink to="/">
-                Home
-              
-            </RouterLink>
+            <RouterLink to="/">Home</RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="about" smooth duration={700}>
-            <RouterLink to="/">
-                About
-            </RouterLink>
+            <RouterLink to="/">About</RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="portfolio" smooth duration={700}>
-            <RouterLink to="/">
-                Portfolio
-              
-            </RouterLink>
+            <RouterLink to="/">Portfolio</RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="experience" smooth duration={700}>
-            <RouterLink to="/">
-                Skills
-            </RouterLink>
+            <RouterLink to="/">Skills</RouterLink>
           </ScrollLink>
         </li>
         <li className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200">
           <ScrollLink to="contact" smooth duration={700}>
-            <RouterLink to="/">
-                Contact
-              
-            </RouterLink>
+            <RouterLink to="/">Contact</RouterLink>
           </ScrollLink>
         </li>
         <RouterLink
